@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="NotFound" xml:space="preserve">
+        <value>رکوردی پیدا نشد</value>
+    </data>
+    <data name="AnOrderAlreadyInProgress" xml:space="preserve">
+        <value>سفارشی وجود دارد.</value>
+    </data>
+    <data name="Order_Items_NotEmpty" xml:space="preserve">
+        <value>سفارش باید حداقل یک آیتم داشته باشد.</value>
+    </data>
+    <data name="Order_Item_ItemId_Positive" xml:space="preserve">
+        <value>شناسه آیتم باید عددی مثبت باشد.</value>
+    </data>
+    <data name="Order_Item_Quantity_Positive" xml:space="preserve">
+        <value>تعداد آیتم باید بیشتر از صفر باشد.</value>
+    </data>
+    <data name="Order_OrderType_IsValid" xml:space="preserve">
+        <value>نوع سفارش نامعتبر است.</value>
+    </data>
+    <data name="Order_TableNumber_RequiredForServe" xml:space="preserve">
+        <value>شماره میز برای سرویس میز الزامی است</value>
+    </data>
+    <data name="Order_TableNumber_Invalid" xml:space="preserve">
+        <value>شماره میز نامعتبر است.</value>
+    </data>
+    <data name="Order_NotFound" xml:space="preserve">
+        <value>سفارشی پیدا نشد.</value>
+    </data>
+    <data name="Order_CanNotPay" xml:space="preserve">
+        <value>سفارش قابل پرداخت نیست.</value>
+    </data>
+    <data name="Category_DuplicateByTitle" xml:space="preserve">
+        <value>دسته بندی با عنوان وارد شده وجود دارد.</value>
+    </data>
+    <data name="Category_Name_Required" xml:space="preserve">
+        <value>عنوان دسته بندی الزامی است.</value>
+    </data>
+    <data name="Category_NotFound" xml:space="preserve">
+        <value>دسته بندی پیدا نشد.</value>
+    </data>
+    <data name="MenuItem_Name_Required" xml:space="preserve">
+        <value>عنوان محصول الزامی است.</value>
+    </data>
+    <data name="MenuItem_CategoryId_Invalid" xml:space="preserve">
+        <value>دسته بندی انتخابی معتبر نیست.</value>
+    </data>
+    <data name="MenuItem_PriceRange_Invalid" xml:space="preserve">
+        <value>بازه قیمت محصول معتبر نیست.</value>
+    </data>
+    <data name="MenuItem_DiscountRange_Invalid" xml:space="preserve">
+        <value>بازه انتخابی درصد تخفیف معتبر نیست.</value>
+    </data>
+    <data name="MenuItem_DuplicateByName" xml:space="preserve">
+        <value>محصولی با این عنوان و دسته بندی وجود دارد.</value>
+    </data>
+    <data name="MenuItem_NotFound" xml:space="preserve">
+        <value>محصول مورد نظر پیدا نشد.</value>
+    </data>
+    <data name="Shop_Name_Required" xml:space="preserve">
+        <value>عنوان فروشگاه الزامی است.</value>
+    </data>
+    <data name="Shop_NumberOfTables_Required" xml:space="preserve">
+        <value>تعداد میز های الزامی است.</value>
+    </data>
+    <data name="PhoneNumber_Invalid" xml:space="preserve">
+        <value>شماره ی وارد شده اشتباه است.</value>
+    </data>
+    <data name="Otp_AlreadySent" xml:space="preserve">
+        <value>کد ارسال شده است.</value>
+    </data>
+    <data name="Otp_Wrong" xml:space="preserve">
+        <value>کد وارد شده اشتباه است.</value>
+    </data>
+    <data name="Otp_Expired" xml:space="preserve">
+        <value>کد وارد شده منقظی شده است.</value>
+    </data>
+    <data name="User_NotFound" xml:space="preserve">
+        <value>کاربر وارد شده پیدا نشد.</value>
+    </data>
+    <data name="Shop_NotFound" xml:space="preserve">
+        <value>فروشگاه وارد شده پیدا نشده.</value>
+    </data>
+    <data name="POS_Already_Assigned" xml:space="preserve">
+        <value>پوز فعلی در حال استفاده است.</value>
+    </data>
+    <data name="POS_Invalid_Token" xml:space="preserve">
+        <value>پوز وارد شده نامعتبر است.</value>
+    </data>
+    <data name="Order_AddressForDelivery_Invalid" xml:space="preserve">
+        <value>ادرس انتخاب شده نا معتبر است.</value>
+    </data>
+    <data name="WebsiteOrder_Payment_Required" xml:space="preserve">
+        <value>پرداخت برای سفارش از سایت الزامی است.</value>
+    </data>
+    <data name="WebsiteOrder_PGPayment_Required" xml:space="preserve">
+        <value>پرداخت از درگاه برای سفارش از سایت الزامی است.</value>
+    </data>
+    <data name="POSOrder_POSPayment_Required" xml:space="preserve">
+        <value>پرداخت از پوز برای سفارش از پوز الزامی است.</value>
+    </data>
+    <data name="Reporting_DateRange_Invalid" xml:space="preserve">
+        <value>بازه زمانی وارد شده نامعتبر است.</value>
+    </data>
+    <data name="Order_ServeInfo_NotValid" xml:space="preserve">
+        <value>اطلاعات سرو نامعتبر است.</value>
+    </data>
+    <data name="Poll_Response_NotFound" xml:space="preserve">
+        <value>نظرسنجی پیدا نشد.</value>
+    </data>
+    <data name="CashbackSetting_Duplicate" xml:space="preserve">
+        <value>کش بک فعلی با ورودی یکی است.</value>
+    </data>
+    <data name="PG_Error" xml:space="preserve">
+        <value>خطای درگاه پرداخت.</value>
+    </data>
+    <data name="InternalTransaction_NotFound" xml:space="preserve">
+        <value>پرداخت وارد شده پیدا نشد.</value>
+    </data>
+    <data name="InternalTransaction_NotSuccessful" xml:space="preserve">
+        <value>پرداخت وارد شده معتبر نمی باشد.</value>
+    </data>
+    <data name="SmsRequest_NotFound" xml:space="preserve">
+        <value>درخواست پیام یافت نشد.</value>
+    </data>
+    <data name="PollSettings_NotFound" xml:space="preserve">
+        <value>تنظیمات نظرسنجی پیدا نشد.</value>
+    </data>
+    <data name="Order_Items_NotFound" xml:space="preserve">
+        <value>منو آیتم انتخابی در این سفارش وجود ندارد.</value>
+    </data>
+</root>

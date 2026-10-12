@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="ValueObjects\Orders\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Entities\Orders\OnSiteOrderServeInfo.cs">
+        <DependentUpon>OrderServeInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\PosOrder.cs">
+        <DependentUpon>Order.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\WebsiteOrder.cs">
+        <DependentUpon>Order.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\CashierOrder.cs">
+        <DependentUpon>Order.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\PosPaymentInfo.cs">
+        <DependentUpon>PaymentInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\PGPaymentInfo.cs">
+        <DependentUpon>PaymentInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Enums\PGPaymentType.cs">
+        <DependentUpon>PaymentInfoType.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\TransferPaymentInfo.cs">
+        <DependentUpon>PaymentInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\CashPaymentInfo.cs">
+        <DependentUpon>PaymentInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\AmendablePaymentInfo.cs">
+        <DependentUpon>PaymentInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Enums\AmendmentType.cs">
+        <DependentUpon>PaymentInfoType.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\DeliveryOrderServeInfo.cs">
+        <DependentUpon>OrderServeInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Orders\TakeAwayOrderServeInfo.cs">
+        <DependentUpon>OrderServeInfo.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Customers\OrderCustomerCredit.cs">
+        <DependentUpon>CustomerCredit.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Customers\ManualCustomerCredit.cs">
+        <DependentUpon>CustomerCredit.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Entities\Sms\SmsRequestReceptorStatusHistory.cs">
+        <DependentUpon>SmsRequestReceptor.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

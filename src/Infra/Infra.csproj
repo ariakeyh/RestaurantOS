@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="IPE.SmsIr" Version="1.2.7" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.7" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.7" />
+      <PackageReference Include="Minio" Version="6.0.5" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0-rc.1.efcore.9.0.0" />
+      <PackageReference Include="StackExchange.Redis" Version="2.8.58" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Application\Application.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Database\Configs\Orders\OnSiteOrderServeInfoConfig.cs">
+        <DependentUpon>ServeInfoConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\TakeAwayOrderServeInfoConfig.cs">
+        <DependentUpon>ServeInfoConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\WebsiteOrderConfig.cs">
+        <DependentUpon>OrderConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\PosOrderConfig.cs">
+        <DependentUpon>OrderConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\CashierOrderConfig.cs">
+        <DependentUpon>OrderConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\PGPaymentInfoConfig.cs">
+        <DependentUpon>PaymentInfoConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\PosPaymentInfoConfig.cs">
+        <DependentUpon>PaymentInfoConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\TransferPaymentInfoConfig.cs">
+        <DependentUpon>PaymentInfoConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Orders\CashPaymentInfoConfig.cs">
+        <DependentUpon>PaymentInfoConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Customers\CashbackCustomerCreditConfig.cs">
+        <DependentUpon>CustomerCreditConfig.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Database\Configs\Customers\ManualCustomerCreditConfig.cs">
+        <DependentUpon>CustomerCreditConfig.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

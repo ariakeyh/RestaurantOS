@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Common\Common.csproj" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="13.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.3.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+      <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.7" />
+      <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="9.0.7" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.7" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
+      <PackageReference Include="StackExchange.Redis" Version="2.8.58" />
+      <PackageReference Include="VaultSharp" Version="1.17.5.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Services\Order\POSOrderCreator.cs">
+        <DependentUpon>IOrderCreator.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\Order\CashierOrderCreator.cs">
+        <DependentUpon>IOrderCreator.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\Order\WebsiteOrderCreator.cs">
+        <DependentUpon>IOrderCreator.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\CashPaymentInfoDto.cs">
+        <DependentUpon>PaymentInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\PGPaymentInfoDto.cs">
+        <DependentUpon>PaymentInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\PosPaymentInfoDto.cs">
+        <DependentUpon>PaymentInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\TransferPaymentInfoDto.cs">
+        <DependentUpon>PaymentInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\OnSiteServeInfoDto.cs">
+        <DependentUpon>ServeInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\TakeAwayServeInfoDto.cs">
+        <DependentUpon>ServeInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\DeliveryServeInfoDto.cs">
+        <DependentUpon>ServeInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\WebsiteSourceInfoDto.cs">
+        <DependentUpon>SourceInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\PosSourceInfoDto.cs">
+        <DependentUpon>SourceInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\OrderServices\CashierSourceInfoDto.cs">
+        <DependentUpon>SourceInfoDto.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Services\ShopCreditService.Increase.cs">
+        <DependentUpon>ShopCreditService.cs</DependentUpon>
+      </Compile>
+      <Compile Update="Interface\ObjectStorageTypes.cs">
+        <DependentUpon>IObjectStorage.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

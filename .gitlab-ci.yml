@@ -1,0 +1,16 @@
+workflow:
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+      
+stages:
+  - build
+  - deploy
+
+include:
+  - component: $CI_SERVER_FQDN/shared/ci/build@main
+
+deploy:
+  stage: deploy
+  trigger:
+    project: deployments/menu
+    branch: main
